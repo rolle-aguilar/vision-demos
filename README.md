@@ -13,6 +13,7 @@ Real-world computer vision demos.
 | **[running](running/)** | Measures a runner's cadence, times every foot strike, and averages the knee shape at contact. | [`vitpose-plus-large`](https://vlm.run/gateway/models/usyd-community-vitpose-plus-large) |
 | **[deadlift](deadlift/)** | Counts deadlift reps and classifies each rep's back as straight or rounded, with the probability. | [`sam3.1`](https://vlm.run/gateway/models/facebook-sam3.1) + [`vitpose-plus-large`](https://vlm.run/gateway/models/usyd-community-vitpose-plus-large) + [`gemma-4-26b-a4b-it`](https://vlm.run/gateway/models/google-gemma-4-26b-a4b-it) |
 | **[basketball](basketball/)** | Calls every shot a make or a miss by following the ball through the rim, and plots each shot on a court from above with the FG%. | [`sam3.1`](https://vlm.run/gateway/models/facebook-sam3.1) + [`vitpose-plus-large`](https://vlm.run/gateway/models/usyd-community-vitpose-plus-large) |
+| **[handball](handball/)** | Calls every shot a goal or a miss by following the ball to the goal line, says which part of the goal it went in, and charts every shot on a front-on goal. | [`sam3.1`](https://vlm.run/gateway/models/facebook-sam3.1) + [`vitpose-plus-large`](https://vlm.run/gateway/models/usyd-community-vitpose-plus-large) |
 
 
 ### Rock Climbing 3D
@@ -86,7 +87,7 @@ conda env create -f environment.yml && conda activate vision-demos   # or: pip i
 python app.py                                                        # -> http://127.0.0.1:7860
 ```
 
-Upload a clip, trim it, analyze. No API key needed (anonymous, rate-limited tier); paste a [VLM Run](https://app.vlm.run) key or set `VLMRUN_API_KEY` for higher limits. `rock_climbing_3d` isn't in the app (it needs a LiDAR capture). `push_ups` and `basketball` aren't in the app either. ffmpeg is required.
+Upload a clip, trim it, analyze. No API key needed (anonymous, rate-limited tier); paste a [VLM Run](https://app.vlm.run) key or set `VLMRUN_API_KEY` for higher limits. `rock_climbing_3d` isn't in the app (it needs a LiDAR capture). `push_ups`, `basketball` and `handball` aren't in the app either. ffmpeg is required.
 
 ## License
 
